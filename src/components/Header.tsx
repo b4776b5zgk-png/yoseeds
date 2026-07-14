@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container header__inner">
-        <a href="/" className="header__logo">
+        <a href={import.meta.env.BASE_URL} className="header__logo">
           <Logo variant="header" />
         </a>
 

@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div className="footer__brand">
-            <a href="/" className="footer__logo">
+            <a href={import.meta.env.BASE_URL} className="footer__logo">
               <Logo variant="footer" />
             </a>
             <p className="footer__tagline">
