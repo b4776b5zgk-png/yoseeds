@@ -77,29 +77,27 @@
 }
 
 .hero__impact {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  padding: 24px 32px;
+  display: inline-flex;
+  align-items: stretch;
+  gap: 20px;
+  padding: 18px 22px;
   background: var(--color-white);
   border: 1px solid var(--color-sage-dark);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
-  width: 100%;
-  max-width: 480px;
+  width: fit-content;
 }
 
 .hero__counter {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  flex: 1;
-  min-width: 0;
+  justify-content: center;
+  gap: 4px;
+  flex: 0 0 auto;
 }
 
 .hero__counter--co2 {
-  flex: 1.35;
-  min-width: 160px;
+  min-width: 0;
 }
 
 .hero__counter-value {
@@ -127,7 +125,7 @@
 
 .hero__counter-divider {
   width: 1px;
-  height: 56px;
+  align-self: stretch;
   background: var(--color-sage-dark);
   flex-shrink: 0;
 }
@@ -137,7 +135,8 @@
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.92);
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.28);
-  max-width: 480px;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .hero__actions {
@@ -161,10 +160,6 @@
 
   .hero__actions {
     justify-content: flex-start;
-  }
-
-  .hero__impact {
-    max-width: 100%;
   }
 }
 

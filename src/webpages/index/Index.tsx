@@ -2,7 +2,7 @@ import Header from '../../components/Header'
 import Hero from '../../components/Hero'
 import FeaturedPlants from '../../components/FeaturedPlants'
 import Categories from '../../components/Categories'
-import WhyUs from '../../components/WhyUs'
+import HelpEnvironment from '../../components/HelpEnvironment'
 import Newsletter from '../../components/Newsletter'
 import Footer from '../../components/Footer'
 
@@ -14,7 +14,7 @@ export default function Index() {
         <Hero />
         <FeaturedPlants />
         <Categories />
-        <WhyUs />
+        <HelpEnvironment />
         <Newsletter />
       </main>
       <Footer />

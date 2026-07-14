@@ -2,9 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import './Hero.css'
 import { publicAsset } from '../utils/publicAsset'
 
-const CO2_PER_TREE_KG = 22
-const KG_PER_TON = 1000
-const INITIAL_TREES = 12847
+const INITIAL_TREES = 12852
+const CO2_REDUCED_TONS = 283
 const COUNT_DURATION = 2200
 
 function formatNumber(value: number) {
@@ -40,17 +39,8 @@ function useCountUp(target: number, duration = COUNT_DURATION) {
 }
 
 export default function Hero() {
-  const [treesPlanted, setTreesPlanted] = useState(INITIAL_TREES)
-  const animatedTrees = useCountUp(treesPlanted)
-  const co2ReducedTons = (animatedTrees * CO2_PER_TREE_KG) / KG_PER_TON
-
-  useEffect(() => {
-    const interval = window.setInterval(() => {
-      setTreesPlanted((prev) => prev + 1)
-    }, 14000)
-
-    return () => window.clearInterval(interval)
-  }, [])
+  const animatedTrees = useCountUp(INITIAL_TREES)
+  const animatedCo2 = useCountUp(CO2_REDUCED_TONS)
 
   return (
     <section
@@ -80,7 +70,7 @@ export default function Hero() {
             <div className="hero__counter-divider" aria-hidden="true" />
             <div className="hero__counter hero__counter--co2">
               <span className="hero__counter-value">
-                {formatNumber(co2ReducedTons)}
+                {formatNumber(animatedCo2)}
                 <span className="hero__counter-unit"> Tons</span>
               </span>
               <span className="hero__counter-label">CO₂ Reduced</span>

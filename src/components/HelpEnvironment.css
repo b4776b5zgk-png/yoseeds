@@ -1,0 +1,147 @@
+.help-env {
+  padding: 80px 0;
+  background: var(--color-cream);
+}
+
+.help-env__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.help-env__slideshow {
+  position: relative;
+}
+
+.help-env__slides {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: var(--color-primary-dark);
+}
+
+.help-env__slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.help-env__slide--active {
+  opacity: 1;
+}
+
+.help-env__slide-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.help-env__era {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.help-env__era--then {
+  background: var(--color-sage);
+  color: var(--color-primary);
+}
+
+.help-env__era--now {
+  background: #f5e6d8;
+  color: #8b4513;
+}
+
+.help-env__dots {
+  display: flex;
+  gap: 8px;
+}
+
+.help-env__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-sage-dark);
+  transition: all var(--transition);
+}
+
+.help-env__dot--active {
+  background: var(--color-primary);
+  transform: scale(1.2);
+}
+
+.help-env__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.help-env__eyebrow {
+  display: inline-block;
+  width: fit-content;
+  padding: 6px 16px;
+  background: var(--color-sage);
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  letter-spacing: 0.02em;
+}
+
+.help-env__lead {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.help-env__content p {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+.help-env__cta-text {
+  font-weight: 600;
+  color: var(--color-primary-dark) !important;
+}
+
+.help-env__content .btn {
+  width: fit-content;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .help-env__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .help-env__slides {
+    aspect-ratio: 16 / 11;
+  }
+}
+
+@media (max-width: 480px) {
+  .help-env {
+    padding: 64px 0;
+  }
+
+  .help-env__slide-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
