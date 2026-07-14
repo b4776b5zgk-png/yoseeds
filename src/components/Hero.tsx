@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import './Hero.css'
+import { publicAsset } from '../utils/publicAsset'
 
 const CO2_PER_TREE_KG = 22
+const KG_PER_TON = 1000
 const INITIAL_TREES = 12847
 const COUNT_DURATION = 2200
 
@@ -40,7 +42,7 @@ function useCountUp(target: number, duration = COUNT_DURATION) {
 export default function Hero() {
   const [treesPlanted, setTreesPlanted] = useState(INITIAL_TREES)
   const animatedTrees = useCountUp(treesPlanted)
-  const co2Reduced = animatedTrees * CO2_PER_TREE_KG
+  const co2ReducedTons = (animatedTrees * CO2_PER_TREE_KG) / KG_PER_TON
 
   useEffect(() => {
     const interval = window.setInterval(() => {
@@ -51,9 +53,13 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="hero">
+    <section
+      className="hero"
+      style={{ '--hero-bg': `url(${publicAsset('forest.svg')})` } as React.CSSProperties}
+    >
+      <div className="hero__overlay" aria-hidden="true" />
       <div className="container hero__inner">
-        <div className="hero__content">
+        <div className="hero__main">
           <span className="hero__eyebrow">Growing a greener planet, one tree at a time</span>
           <h1 className="hero__title">
             Plant today,
@@ -63,15 +69,20 @@ export default function Hero() {
             Every plant you buy helps restore our planet. Join thousands of people
             planting trees and reducing carbon emissions around the world.
           </p>
+        </div>
 
+        <div className="hero__aside">
           <div className="hero__impact">
             <div className="hero__counter">
               <span className="hero__counter-value">{formatNumber(animatedTrees)}</span>
               <span className="hero__counter-label">Trees Planted</span>
             </div>
             <div className="hero__counter-divider" aria-hidden="true" />
-            <div className="hero__counter">
-              <span className="hero__counter-value">{formatNumber(co2Reduced)} kg</span>
+            <div className="hero__counter hero__counter--co2">
+              <span className="hero__counter-value">
+                {formatNumber(co2ReducedTons)}
+                <span className="hero__counter-unit"> Tons</span>
+              </span>
               <span className="hero__counter-label">CO₂ Reduced</span>
             </div>
           </div>
@@ -82,23 +93,6 @@ export default function Hero() {
 
           <div className="hero__actions">
             <a href="#shop" className="btn btn-primary">Shop Plants</a>
-          </div>
-        </div>
-
-        <div className="hero__visual">
-          <div className="hero__image-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1466692476869-aef1dfb1e735?w=700&h=800&fit=crop"
-              alt="Lush green indoor plants in a bright living room"
-              className="hero__image"
-            />
-            <div className="hero__floating-card">
-              <span className="hero__floating-icon">🌳</span>
-              <div>
-                <strong>1 Tree Planted</strong>
-                <span>With every order you place</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
