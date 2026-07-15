@@ -53,7 +53,7 @@ export default function HelpEnvironment() {
         </div>
 
         <div className="help-env__content">
-          <span className="help-env__eyebrow">Help the Environment</span>
+          <span className="help-env__eyebrow">Forests that are Disappearing ! </span>
           <h2 className="section-title">Wasfi Al-Tal Forest is disappearing</h2>
           <p className="help-env__lead">
             In the hills of Balqa, Wasfi Al-Tal Forest was once one of Jordan&apos;s largest and
