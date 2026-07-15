@@ -8,7 +8,7 @@ export default function Newsletter() {
           <div className="newsletter__content">
             <h2 className="newsletter__title">Join the YoSeeds community</h2>
             <p className="newsletter__description">
-              Get plant care tips, new arrivals, and exclusive offers delivered to your inbox.
+              sign in to get plant care tips,and emails 
             </p>
           </div>
           <form className="newsletter__form" onSubmit={(e) => e.preventDefault()}>
