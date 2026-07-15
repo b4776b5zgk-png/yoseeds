@@ -58,6 +58,8 @@ export const featuredPlants: Plant[] = [
     difficulty: 'Easy',
     image: 'https://www.evergreentrees.com.au/products/pinus-halipensis?srsltid=AfmBOopk_jH3LolQzWzMML0M0xEsGKk7KtnyD-UtrN_ZRgKRZFv8yeLc',
     badge: '',   
+
+      
 export const categories = [
   {
     name: 'Indoor Plants',
