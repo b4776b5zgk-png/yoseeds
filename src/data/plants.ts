@@ -13,7 +13,7 @@ export const featuredPlants: Plant[] = [
   {
     id: '1',
     name: ' 10 jod bundle ',
-    scientificName: '10 jod bundle',
+    scientificName: '10 jod bundle', 
     price: 9.99,
     category: 'Indoor 2',
     difficulty: 'Easy',
