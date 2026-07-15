@@ -48,7 +48,7 @@ export const featuredPlants: Plant[] = [
     difficulty: 'Easy',
     image: 'https://www.gardeningexpress.co.uk/giant-tuscan-olive-tree-olea-europa-mediterranean-olive-tree-xxxl-large-specimen-circa-250-300cm-tall',
   },
-]
+  {
 
     id: '3',
     name: 'alppo pine ',
