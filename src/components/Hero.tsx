@@ -4,7 +4,7 @@ import { publicAsset } from '../utils/publicAsset'
 
 const INITIAL_TREES = 483
 const CO2_REDUCED_TONS = 23
-const COUNT_DURATION = 2200
+const COUNT_DURATION = 2233
 
 function formatNumber(value: number) {
   return new Intl.NumberFormat('en-US').format(Math.round(value))
