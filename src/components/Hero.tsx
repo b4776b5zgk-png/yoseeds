@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import './Hero.css'
 import { publicAsset } from '../utils/publicAsset'
 
-const INITIAL_TREES = 12852
-const CO2_REDUCED_TONS = 283
+const INITIAL_TREES = 483
+const CO2_REDUCED_TONS = 23
 const COUNT_DURATION = 2200
 
 function formatNumber(value: number) {
