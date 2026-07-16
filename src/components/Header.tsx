@@ -19,10 +19,10 @@ export default function Header() {
             </button>
             <div className="header__dropdown-menu">
               <a href="#shop" className="header__dropdown-item">Indoor Plants</a>
-              <a href="#categories" className="header__dropdown-item">Outdoor Plants</a>
+              <a href="#bundles" className="header__dropdown-item">Outdoor Plants</a>
             </div>
           </div>
-          <a href="#categories" className="header__nav-link">Plant the Earth</a>
+          <a href="#bundles" className="header__nav-link">Plant the Earth</a>
           <a href="#about" className="header__nav-link">Help the Environment</a>
           <a href="#contact" className="header__nav-link">About Us</a>
         </nav>

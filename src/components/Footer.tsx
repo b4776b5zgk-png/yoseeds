@@ -19,9 +19,7 @@ export default function Footer() {
             <h4>Shop</h4>
             <ul>
               <li><a href="#shop">All Plants</a></li>
-              <li><a href="#categories">Indoor</a></li>
-              <li><a href="#categories">Outdoor</a></li>
-              <li><a href="#categories">Succulents</a></li>
+              <li><a href="#bundles">Seed Bundles</a></li>
             </ul>
           </div>
 
