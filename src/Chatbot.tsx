@@ -2,8 +2,33 @@ import { useState } from "react";
 import "./ChatBot.css";
 
 export default function ChatBot() {
-
   const [open, setOpen] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const [messages, setMessages] = useState([
+    {
+      sender: "ai",
+      text: "Hello! 👋 I am YoSeeds AI. Ask me about seeds, plants, or our bundles 🌱"
+    }
+  ]);
+
+  function sendMessage() {
+    if (!message.trim()) return;
+
+    setMessages([
+      ...messages,
+      {
+        sender: "user",
+        text: message
+      },
+      {
+        sender: "ai",
+        text: "Thanks for your message! 🌿 I am still learning, but I can help you with YoSeeds products and plant questions."
+      }
+    ]);
+
+    setMessage("");
+  }
 
   return (
     <>
@@ -24,23 +49,38 @@ export default function ChatBot() {
 
 
           <div className="chat-body">
-            <p>Hello! 👋</p>
-            <p>
-              I am the YoSeeds AI assistant.
-            </p>
-            <p>
-              Ask me about seeds, plants, and bundles 🌿
-            </p>
+
+            {messages.map((msg, index) => (
+              <p key={index}>
+                <b>
+                  {msg.sender === "ai"
+                    ? "YoSeeds AI:"
+                    : "You:"}
+                </b>{" "}
+                {msg.text}
+              </p>
+            ))}
+
           </div>
 
 
           <div className="chat-footer">
 
             <input
-              placeholder="Type your message..."
+              value={message}
+              onChange={(e) =>
+                setMessage(e.target.value)
+              }
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  sendMessage();
+                }
+              }}
+              placeholder="Ask YoSeeds AI..."
             />
 
-            <button>
+
+            <button onClick={sendMessage}>
               Send
             </button>
 
@@ -52,3 +92,5 @@ export default function ChatBot() {
     </>
   );
 }
+
+
