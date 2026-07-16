@@ -1,3 +1,34 @@
+.chatbot-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  width: 70px;
+  height: 70px;
+
+  background: #2e7d32;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 32px;
+
+  cursor: pointer;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+  z-index: 9999;
+}
+
+.chatbot-button:hover {
+  transform: scale(1.1);
+}
+
+
+/* Chat window */
+
 .chat-window {
   position: fixed;
   bottom: 110px;
