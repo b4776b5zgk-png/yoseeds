@@ -27,39 +27,39 @@ export const featuredPlants: Plant[] = [
     price: 19.99,
     category: 'Indoor 3 ',
     difficulty: 'Medium',
-    image: ' https://www.goodhousekeeping.com/home/gardening/advice/g1285/hard-to-kill-plants/',
+    image: 'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=600&h=450&fit=crop',
   },
   {
     id: '3',
     name: 'Snake Plant with olive tree',
     scientificName: 'Sansevieria trifasciata',
-    price: 50 jod,
+    price: 50,
     category: 'Indoor 2 outdoor 1',
     difficulty: 'Easy',
-    image: 'https://images.unsplash.com/photo-1593482892228-4fc0b28c2c0e?w=600&h=700&fit=crop\https://www.gardeningexpress.co.uk/giant-tuscan-olive-tree-olea-europa-mediterranean-olive-tree-xxxl-large-specimen-circa-250-300cm-tall',
+    image: 'https://images.unsplash.com/photo-1593482892228-4fc0b28c2c0e?w=600&h=700&fit=crop',
     badge: 'Low Light',
   },
   {
     id: '4',
     name: 'olive tree 1 year old ',  
     scientificName: 'Lavandula angustifolia',
-    price: 40 jod,
+    price: 40,
     category: 'Outdoor',
     difficulty: 'Easy',
-    image: 'https://www.gardeningexpress.co.uk/giant-tuscan-olive-tree-olea-europa-mediterranean-olive-tree-xxxl-large-specimen-circa-250-300cm-tall',
+    image: 'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=600&h=450&fit=crop',
   },
   {
-
-    id: '3',
+    id: '5',
     name: 'alppo pine ',
-    scientificName: 'Sansevieria trifasciata',
-    price: 46.99 jod,
+    scientificName: 'Pinus halepensis',
+    price: 46.99,
     category: ' outdoor ',
     difficulty: 'Easy',
-    image: 'https://www.evergreentrees.com.au/products/pinus-halipensis?srsltid=AfmBOopk_jH3LolQzWzMML0M0xEsGKk7KtnyD-UtrN_ZRgKRZFv8yeLc',
-    badge: '',   
+    image: 'https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&h=450&fit=crop',
+    badge: '',
+  },
+]
 
-      
 export const categories = [
   {
     name: 'Indoor Plants',
