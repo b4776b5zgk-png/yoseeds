@@ -23,7 +23,7 @@ export const featuredPlants: Plant[] = [
   {
     id: '2',
     name: '20 jod bundle ',
-    scientificName: 'Ficus lyrata',
+    scientificName: '',
     price: 19.99,
     category: 'Indoor 3 ',
     difficulty: 'Medium',
@@ -31,9 +31,9 @@ export const featuredPlants: Plant[] = [
   },
   {
     id: '3',
-    name: 'Snake Plant with olive tree',
-    scientificName: 'Sansevieria trifasciata',
-    price: 50,
+    name: '50 jod bundle',
+    scientificName: '',
+    price: 50 jod,
     category: 'Indoor 2 outdoor 1',
     difficulty: 'Easy',
     image: 'https://images.unsplash.com/photo-1593482892228-4fc0b28c2c0e?w=600&h=700&fit=crop',
@@ -41,22 +41,16 @@ export const featuredPlants: Plant[] = [
   },
   {
     id: '4',
-    name: 'olive tree 1 year old ',  
-    scientificName: 'Lavandula angustifolia',
+    name: 'olive tree  ',  
+    scientificName: '',
     price: 40,
     category: 'Outdoor',
     difficulty: 'Easy',
     image: 'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=600&h=450&fit=crop',
   },
   {
-    id: '5',
-    name: 'alppo pine ',
-    scientificName: 'Pinus halepensis',
-    price: 46.99,
-    category: ' outdoor ',
-    difficulty: 'Easy',
-    image: 'https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&h=450&fit=crop',
-    badge: '',
+   
+    
   },
 ]
 
