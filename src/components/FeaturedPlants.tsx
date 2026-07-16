@@ -34,7 +34,7 @@ export default function FeaturedPlants() {
                 </div>
                 <h3 className="plant-card__name">{plant.name}</h3>
                 <p className="plant-card__scientific">{plant.scientificName}</p>
-                <p className="plant-card__price">{plant.price} JD</p>
+                <p className="plant-card__price">${plant.price.toFixed(2)}</p>
               </div>
             </article>
           ))}

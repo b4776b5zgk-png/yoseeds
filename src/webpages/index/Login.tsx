@@ -2,14 +2,10 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-
   const navigate = useNavigate();
-
   const [role, setRole] = useState("User");
 
-
   function login() {
-
     if (role === "Super Admin") {
       navigate("/super-admin");
     }
@@ -25,40 +21,22 @@ export default function Login() {
     if (role === "User") {
       navigate("/account");
     }
-
   }
-
 
   return (
     <div>
-
       <h1>🌱 YoSeeds Login</h1>
 
-
-      <select
-        value={role}
-        onChange={(e)=>setRole(e.target.value)}
-      >
-
+      <select value={role} onChange={(e) => setRole(e.target.value)}>
         <option>User</option>
-
         <option>Farmer Admin</option>
-
         <option>Government Admin</option>
-
         <option>Super Admin</option>
-
       </select>
-
 
       <br /><br />
 
-
-      <button onClick={login}>
-        Sign In
-      </button>
-
-
+      <button onClick={login}>Sign In</button>
     </div>
   );
 }
