@@ -50,8 +50,8 @@ export const featuredPlants: Plant[] = [
     category: 'Outdoor',
     difficulty: 'Easy',
     image: 'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=600&h=450&fit=crop',
-  }
-
+  },
+]
 
 export const categories = [
   {
