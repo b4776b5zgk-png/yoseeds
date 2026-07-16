@@ -9,8 +9,10 @@ import GovernmentAdmin from "./webpages/index/goverment.admin";
 import UserAccount from "./webpages/index/UserAccount";
 
 function App() {
+  const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <ChatBot />
 
       <Routes>
