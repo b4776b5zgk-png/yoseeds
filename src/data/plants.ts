@@ -12,47 +12,46 @@ export interface Plant {
 export const featuredPlants: Plant[] = [
   {
     id: '1',
-    name: ' 10 jod bundle ',
-    scientificName: '10 jod bundle', 
-    price: 9.99,
-    category: 'Indoor 2',
+    name: '10 JD Seed Bundle',
+    scientificName: 'Starter Bundle',
+    price: 10,
+    category: 'Indoor + Outdoor Seeds',
     difficulty: 'Easy',
     image: 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=600&h=450&fit=crop',
     badge: 'Bestseller',
   },
+
   {
     id: '2',
-    name: '20 jod bundle ',
-    scientificName: '',
-    price: 19.99,
-    category: 'Indoor 3 ',
+    name: '20 JD Seed Bundle',
+    scientificName: 'Growth Bundle',
+    price: 20,
+    category: 'Indoor + Outdoor Seeds',
     difficulty: 'Medium',
     image: 'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=600&h=450&fit=crop',
   },
+
   {
     id: '3',
-    name: '50 jod bundle',
-    scientificName: '',
-    price: 50 jod,
-    category: 'Indoor 2 outdoor 1',
+    name: '50 JD Seed Bundle',
+    scientificName: 'Premium Bundle',
+    price: 50,
+    category: 'Indoor + Outdoor Seeds',
     difficulty: 'Easy',
     image: 'https://images.unsplash.com/photo-1593482892228-4fc0b28c2c0e?w=600&h=700&fit=crop',
-    badge: 'Low Light',
+    badge: 'Premium',
   },
+
   {
     id: '4',
-    name: 'olive tree  ',  
-    scientificName: '',
+    name: 'Olive Tree',
+    scientificName: 'Olea europaea',
     price: 40,
     category: 'Outdoor',
     difficulty: 'Easy',
     image: 'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=600&h=450&fit=crop',
-  },
-  {
-   
-    
-  },
-]
+  }
+
 
 export const categories = [
   {
